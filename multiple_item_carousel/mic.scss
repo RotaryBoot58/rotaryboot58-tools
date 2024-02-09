@@ -1,0 +1,28 @@
+@use '/src/style/variables.scss' as *;
+@use '/src/style/index.scss' as *;
+
+#mic-container {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+    overflow-x: hidden;
+
+    .mic-item {
+        scroll-snap-align: center;
+        display: grid;
+        grid-template-columns: 2rem auto 2rem;
+        width: 100%;
+        flex-shrink: 0;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}

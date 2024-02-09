@@ -1,0 +1,42 @@
+@use '/src/style/variables.scss' as *;
+@use '/src/style/index.scss' as *;
+
+#card {
+    background-color: azure;
+    height: 16rem;
+    width: 12rem;
+
+    #thumbnail {
+        background-color: aqua;
+        height: 9rem;
+        display: flex;
+    }
+
+    #info {
+        height: 7rem;
+
+        #name {
+            background-color: brown;
+            height: 3.5rem;
+            user-select: none;
+            padding: $smallPadding;
+
+            //This webkit bullshit sucks and i hate it, but fuck it, just needs to be working anyway.
+            //Google shit. why? because w3c did not manage to create something else.
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            line-height: calc(3rem / 2rem);
+        }
+
+        #price {
+            padding: $smallPadding;
+            background-color: chocolate;
+            height: 3.5rem;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+        }
+    }
+}
