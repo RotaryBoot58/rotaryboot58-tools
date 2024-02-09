@@ -1,51 +1,51 @@
-import './sig.scss'
+import './sic.scss'
 
 import ArrowLeft from './assets/arrow-left.svg'
 import ArrowRight from './assets/arrow-right.svg'
 
-export default function Sig() {
+export default function Sic() {
 
     return (
-        <div id='sig-container'>
+        <div id='sic-container'>
 
-            <div className="sig-item" id='sig-item1'>
-                <a href="#sig-item3">
+            <div className="sic-item" id='sic-item1'>
+                <a href="#sic-item3">
                     <img src={ArrowLeft} alt="ArrowLeft" />
                 </a>
 
-                <div className="sig-content">
+                <div className="sic-content">
                     1
                 </div>
 
-                <a href="#sig-item2">
+                <a href="#sic-item2">
                     <img src={ArrowRight} alt="ArrowRight" />
                 </a>
             </div>
 
-            <div className="sig-item" id='sig-item2'>
-                <a href="#sig-item1">
+            <div className="sic-item" id='sic-item2'>
+                <a href="#sic-item1">
                     <img src={ArrowLeft} alt="ArrowLeft" />
                 </a>
 
-                <div className="sig-content">
+                <div className="sic-content">
                     2
                 </div>
 
-                <a href="#sig-item3">
+                <a href="#sic-item3">
                     <img src={ArrowRight} alt="ArrowRight" />
                 </a>
             </div>
 
-            <div className="sig-item" id='sig-item3'>
-                <a href="#sig-item2">
+            <div className="sic-item" id='sic-item3'>
+                <a href="#sic-item2">
                     <img src={ArrowLeft} alt="ArrowLeft" />
                 </a>
                 
-                <div className="sig-content">
+                <div className="sic-content">
                     3
                 </div>
 
-                <a href="#sig-item1">
+                <a href="#sic-item1">
                     <img src={ArrowRight} alt="ArrowRight" />
                 </a>
             </div>

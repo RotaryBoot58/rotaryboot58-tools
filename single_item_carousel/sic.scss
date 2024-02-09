@@ -1,12 +1,12 @@
-@use '../../style/base.scss' as *;
+@use '/src/style/index.scss' as *;
 
-#sig-container {
+#sic-container {
     display: flex;
     scroll-snap-type: x mandatory;
     height: 100%;
     overflow-x: hidden;
 
-    .sig-item {
+    .sic-item {
         scroll-snap-align: center;
         display: grid;
         grid-template-columns: 2rem 1fr 2rem;
@@ -14,14 +14,13 @@
         flex-shrink: 0;
 
         a {
-            background-color: $gray;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
 
-        .sig-content {
+        .sic-content {
             width: 100%;
             display: flex;
             align-items: center;
